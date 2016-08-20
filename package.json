@@ -1,0 +1,31 @@
+{
+  "name": "monday",
+  "version": "1.0.0",
+  "description": "todolist with minimal UI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlpokus/monday.git"
+  },
+  "keywords": [
+    "todo",
+    "todolist",
+    "minimal"
+  ],
+  "author": "Karl Pokus <karl.pokus@gmail.com> (https://github.com/karlpokus)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karlpokus/monday/issues"
+  },
+  "homepage": "https://github.com/karlpokus/monday#readme",
+  "dependencies": {
+    "finalhandler": "^0.5.0",
+    "serve-static": "^1.11.1"
+  }
+}
