@@ -1,6 +1,6 @@
 var http = require('http'),
     server = http.createServer(),
-    port = process.env.port || 8080,
+    port = process.env.PORT || 8080,
     fi = require('finalhandler'),
     send = require('serve-static')('public');
 
