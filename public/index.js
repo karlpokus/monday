@@ -51,7 +51,7 @@ var item = {
     var el = $('<input/>')
       .prop({type: 'text', value: o.body})
       .data('id', o.id);
-    $(this.el).append(el);
+    $(this.el).prepend(el);
   },
   remove: function(el) {
     $(el).remove();
@@ -66,31 +66,31 @@ $(function(){
   // EVENT - add sticky
   $('#main').on('keyup', function(e){
     if (e.which === 13) {
-      var body = $(this).val(),
-          o = {
-            body: body,
-            id: id()
-          };
-      item.add(o); // DOM
-      store.add(o); // STORE
-      // reset
+      var body = $(this).val().trim();
+      if (body) {
+        var o = {
+          body: body,
+          id: id()
+        };
+        item.add(o);
+        store.add(o);
+      }
       $(this).val('');
     }
   });
 
-  // EVENT - edit sticky i.e remove or update
+  // EVENT - edit sticky
   $('.list').on('keyup', 'input', function(e){
     if (e.which === 13) {
-      var body = $(this).val(),
+      var body = $(this).val().trim(),
           id = $(this).data('id');
-
-      if (body === 'done') {
-        item.remove(this); // DOM
-        store.remove(id); // STORE
+      if (body.toLowerCase() === 'done' || !body) {
+        item.remove(this);
+        store.remove(id);
       } else {
-        store.update(body, id); // STORE
+        store.update(body, id);
+        $(this).blur();
       }
-      $(this).blur();
       $('#main').focus();
     }
   });
