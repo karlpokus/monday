@@ -1,5 +1,5 @@
 # monday
-A fancy todolist with minimal UI in browser and as a chrome extension. Designed for use on desktop by keyboard alone. Not really mobile friendly. Persistant storage as default.
+A fancy todolist with minimal UI in browser and as a chrome extension. Designed for use on desktop by keyboard alone. Not really mobile friendly. Persistant storage as default. Chrome extension syncs data between devices.
 
 # usage
 - add new item at prompt by `return`
