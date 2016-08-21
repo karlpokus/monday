@@ -1,6 +1,8 @@
 # monday
 A fancy todolist with minimal UI in browser and as a chrome extension. Designed for use on desktop by keyboard alone. Not really mobile friendly. Persistant storage as default. Chrome extension syncs data between devices.
 
+![screenshot](monday_dump.png?raw=true)
+
 # usage
 - add new item at prompt by `return`
 - navigate items by `tab`
@@ -11,7 +13,7 @@ A fancy todolist with minimal UI in browser and as a chrome extension. Designed 
 [demo](https://m0nday.herokuapp.com)
 
 # chrome extension
-[![Chrome Webstore](chrome_badge.png?raw=true)](https://google.com)
+[![Chrome Webstore](chrome_badge.png?raw=true)](https://chrome.google.com/webstore/detail/inephoagiijhmfhmlnaffaaiacdndmom/publish-accepted?hl=sv)
 
 # TODOs
 node
@@ -27,7 +29,7 @@ chrome
 - [x] chrome extension
 - [x] chrome storage API
 - [x] chrome unfinished badge
-- [ ] update link when uploaded
+- [x] update link when uploaded
 
 UI - both/none
 - [ ] localstorage API as module?
