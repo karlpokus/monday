@@ -1,0 +1,14 @@
+{
+  "name": "monday",
+  "manifest_version": 2,
+  "description": "Fancy todolist with minimal UI",
+  "version": "1.1",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'"
+}
