@@ -1,7 +1,6 @@
 /chrome
 /src
 *.sh
-*.png
 *.zip
 LICENCE
 *.md
