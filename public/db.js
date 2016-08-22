@@ -86,7 +86,7 @@ var chrome_store = { // {<id>: <str>, ..}
 
 var db;
 
-if (chrome && chrome.storage) {
+if (chrome !== undefined && chrome.storage !== undefined) {
   db = chrome_store;
 } else {
   db = localStorage_store;
