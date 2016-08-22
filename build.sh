@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # build node
-cp -vR src/ public/ && \
+cp -v src/* public/ && \
 # build chrome
-cp -vR src/ chrome/ && \
+cp -v src/* chrome/ && \
 # zip chrome
 zip -r ext.zip chrome
