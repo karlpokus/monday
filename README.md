@@ -6,38 +6,19 @@ A fancy todolist with minimal UI in browser and as a chrome extension. Designed 
 # usage
 - add new item at prompt by `return`
 - navigate items by `tab`
-- remove item by replacing text with `done` or leave it blank
+- remove item by replacing text with *done* or leave `<blank>`
 - edit item by adding text
+- `$url` to add url from the current tab
+- `$export` to export all data as newline-separated-string
+- `$drop` to delete all data
+- `#filter` to add a filter. Remove filter by `!#`
+- unix-style history with `up arrow` for latest entry and `down arrow` to cycle back
 
 # desktop
 [demo](https://m0nday.herokuapp.com)
 
 # chrome extension
 [![Chrome Webstore](chrome_badge.png?raw=true)](https://chrome.google.com/webstore/detail/inephoagiijhmfhmlnaffaaiacdndmom/publish-accepted?hl=sv)
-
-# TODOs
-node
-- [x] localstorage
-- [x] refactor in and out of localstorage
-- [x] namespace localstorage
-- [x] mobile friendly meta tag
-- [x] demo on heroku
-- [ ] favicon
-- [x] slugignore for heroku
-
-chrome
-- [x] chrome extension
-- [x] chrome storage API
-- [x] chrome unfinished badge
-- [x] update link when uploaded
-
-UI - both/none
-- [ ] localstorage API as module?
-- [ ] remove jQuery
-- [x] validate input
-- [x] item order
-- [ ] navigate by arrow keys
-- [ ] add time ago to UI?
 
 # licence
 MIT
